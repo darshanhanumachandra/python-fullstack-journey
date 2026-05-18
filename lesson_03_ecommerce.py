@@ -27,10 +27,22 @@ class DigitalProduct(Product):
         """Digital products have no shipping"""
         return self.price
 
-
+"""
 physical = PhysicalProduct("Laptop", 1000, 2)
 digital = DigitalProduct("Python Course", 50)
 
 print(f"{physical.name}: ${physical.get_final_price()}")
 print(f"{digital.name}: ${digital.get_final_price()}")
+"""
 
+# Creating multiple products
+products = [
+    PhysicalProduct("Laptop", 1000, 2),
+    DigitalProduct("Python Course", 50),
+    PhysicalProduct("Book", 30, 0.5),
+    DigitalProduct("Ebook", 15)
+]
+
+# Loop through all and print prices
+for product in products:
+    print(f"{product.name}: ${product.get_final_price()}")
