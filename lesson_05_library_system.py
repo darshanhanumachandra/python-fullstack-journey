@@ -1,3 +1,34 @@
+"""
+Library Management System - OOP Practice
+
+CONCEPTS LEARNED:
+- Abstract Base Classes (ABC) with @abstractmethod
+- Inheritance (PhysicalBook and EBook inherit from Book)
+- Polymorphism (different calculate_late_fee() for each type)
+- Encapsulation (private data with self._)
+- Composition (Library contains multiple Books)
+
+WHAT I STRUGGLED WITH:
+1. Understanding where @abstractmethod should be used vs regular methods
+2. Returning numbers instead of formatted strings for calculations
+3. Implementing the Library class logic (looping through books)
+4. Understanding why polymorphism matters (same method, different behavior)
+
+KEY LEARNINGS:
+- Abstract classes prevent instantiation of parent class
+- Child classes MUST implement abstract methods or they fail
+- Polymorphism allows us to call the same method on different types
+- The loop in calculate_total_fees() works because all books have the same method
+- This scales: if we add ServiceBook later, it just needs calculate_late_fee()
+
+REAL-WORLD APPLICATION:
+This pattern is used in:
+- Payment systems (different payment types)
+- Shape calculators (calculate area for Circle, Square, Triangle)
+- Animal sounds (Cat meows, Dog barks)
+- Any system with related but different types
+"""
+
 from abc import ABC, abstractmethod
 
 class Book(ABC):
