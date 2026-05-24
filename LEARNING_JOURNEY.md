@@ -27,7 +27,7 @@
 - **Data Structures** - knowing when to use List vs Tuple vs Dict vs Set
 - **Comprehensions** - elegant, pythonic way to transform data
 
-## Struggles & Solutions 🔧
+## Struggles & Solutions
 
 ### Struggle 1: Understanding Child Class Data
 - **Problem**: Couldn't figure out where `self.card_number` came from in CreditCardPayment class
